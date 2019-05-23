@@ -1,0 +1,639 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3309394522969DAA00516CAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3309394422969DAA00516CAB /* AppDelegate.swift */; };
+		3309394722969DAA00516CAB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3309394622969DAA00516CAB /* ViewController.swift */; };
+		3309394A22969DAA00516CAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3309394822969DAA00516CAB /* Main.storyboard */; };
+		3309394C22969DAD00516CAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3309394B22969DAD00516CAB /* Assets.xcassets */; };
+		3309394F22969DAD00516CAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3309394D22969DAD00516CAB /* LaunchScreen.storyboard */; };
+		3309395C2296A18400516CAB /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3309395A2296A18400516CAB /* Interface.storyboard */; };
+		3309395E2296A18500516CAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3309395D2296A18500516CAB /* Assets.xcassets */; };
+		330939652296A18500516CAB /* Resthotels Watch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 330939642296A18500516CAB /* Resthotels Watch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3309396A2296A18500516CAB /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330939692296A18500516CAB /* InterfaceController.swift */; };
+		3309396C2296A18500516CAB /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3309396B2296A18500516CAB /* ExtensionDelegate.swift */; };
+		3309396E2296A18600516CAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3309396D2296A18600516CAB /* Assets.xcassets */; };
+		330939722296A18600516CAB /* Resthotels Watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 330939582296A18400516CAB /* Resthotels Watch.app */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		330939662296A18500516CAB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3309393922969DAA00516CAB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 330939632296A18500516CAB;
+			remoteInfo = "Resthotels Watch Extension";
+		};
+		330939702296A18600516CAB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3309393922969DAA00516CAB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 330939572296A18400516CAB;
+			remoteInfo = "Resthotels Watch";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		330939762296A18600516CAB /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				330939652296A18500516CAB /* Resthotels Watch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3309397A2296A18600516CAB /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				330939722296A18600516CAB /* Resthotels Watch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3309394122969DAA00516CAB /* Resthotels.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Resthotels.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3309394422969DAA00516CAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3309394622969DAA00516CAB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3309394922969DAA00516CAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3309394B22969DAD00516CAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3309394E22969DAD00516CAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3309395022969DAD00516CAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		330939582296A18400516CAB /* Resthotels Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Resthotels Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3309395B2296A18400516CAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		3309395D2296A18500516CAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3309395F2296A18500516CAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		330939642296A18500516CAB /* Resthotels Watch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Resthotels Watch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		330939692296A18500516CAB /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		3309396B2296A18500516CAB /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		3309396D2296A18600516CAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3309396F2296A18600516CAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3309397B2296DE5000516CAB /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
+		3309397C2296DE5000516CAB /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		3309397D2296DE5000516CAB /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Interface.strings; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3309393E22969DAA00516CAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		330939612296A18500516CAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3309393822969DAA00516CAB = {
+			isa = PBXGroup;
+			children = (
+				3309394322969DAA00516CAB /* Resthotels */,
+				330939592296A18400516CAB /* Resthotels Watch */,
+				330939682296A18500516CAB /* Resthotels Watch Extension */,
+				3309394222969DAA00516CAB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3309394222969DAA00516CAB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3309394122969DAA00516CAB /* Resthotels.app */,
+				330939582296A18400516CAB /* Resthotels Watch.app */,
+				330939642296A18500516CAB /* Resthotels Watch Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3309394322969DAA00516CAB /* Resthotels */ = {
+			isa = PBXGroup;
+			children = (
+				3309394422969DAA00516CAB /* AppDelegate.swift */,
+				3309394622969DAA00516CAB /* ViewController.swift */,
+				3309394822969DAA00516CAB /* Main.storyboard */,
+				3309394B22969DAD00516CAB /* Assets.xcassets */,
+				3309394D22969DAD00516CAB /* LaunchScreen.storyboard */,
+				3309395022969DAD00516CAB /* Info.plist */,
+			);
+			path = Resthotels;
+			sourceTree = "<group>";
+		};
+		330939592296A18400516CAB /* Resthotels Watch */ = {
+			isa = PBXGroup;
+			children = (
+				3309395A2296A18400516CAB /* Interface.storyboard */,
+				3309395D2296A18500516CAB /* Assets.xcassets */,
+				3309395F2296A18500516CAB /* Info.plist */,
+			);
+			path = "Resthotels Watch";
+			sourceTree = "<group>";
+		};
+		330939682296A18500516CAB /* Resthotels Watch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				330939692296A18500516CAB /* InterfaceController.swift */,
+				3309396B2296A18500516CAB /* ExtensionDelegate.swift */,
+				3309396D2296A18600516CAB /* Assets.xcassets */,
+				3309396F2296A18600516CAB /* Info.plist */,
+			);
+			path = "Resthotels Watch Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3309394022969DAA00516CAB /* Resthotels */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3309395322969DAD00516CAB /* Build configuration list for PBXNativeTarget "Resthotels" */;
+			buildPhases = (
+				3309393D22969DAA00516CAB /* Sources */,
+				3309393E22969DAA00516CAB /* Frameworks */,
+				3309393F22969DAA00516CAB /* Resources */,
+				3309397A2296A18600516CAB /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				330939712296A18600516CAB /* PBXTargetDependency */,
+			);
+			name = Resthotels;
+			productName = Resthotels;
+			productReference = 3309394122969DAA00516CAB /* Resthotels.app */;
+			productType = "com.apple.product-type.application";
+		};
+		330939572296A18400516CAB /* Resthotels Watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 330939772296A18600516CAB /* Build configuration list for PBXNativeTarget "Resthotels Watch" */;
+			buildPhases = (
+				330939562296A18400516CAB /* Resources */,
+				330939762296A18600516CAB /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				330939672296A18500516CAB /* PBXTargetDependency */,
+			);
+			name = "Resthotels Watch";
+			productName = "Resthotels Watch";
+			productReference = 330939582296A18400516CAB /* Resthotels Watch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		330939632296A18500516CAB /* Resthotels Watch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 330939732296A18600516CAB /* Build configuration list for PBXNativeTarget "Resthotels Watch Extension" */;
+			buildPhases = (
+				330939602296A18500516CAB /* Sources */,
+				330939612296A18500516CAB /* Frameworks */,
+				330939622296A18500516CAB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Resthotels Watch Extension";
+			productName = "Resthotels Watch Extension";
+			productReference = 330939642296A18500516CAB /* Resthotels Watch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3309393922969DAA00516CAB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = Tectec;
+				TargetAttributes = {
+					3309394022969DAA00516CAB = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					330939572296A18400516CAB = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					330939632296A18500516CAB = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 3309393C22969DAA00516CAB /* Build configuration list for PBXProject "Resthotels" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				fr,
+			);
+			mainGroup = 3309393822969DAA00516CAB;
+			productRefGroup = 3309394222969DAA00516CAB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3309394022969DAA00516CAB /* Resthotels */,
+				330939572296A18400516CAB /* Resthotels Watch */,
+				330939632296A18500516CAB /* Resthotels Watch Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3309393F22969DAA00516CAB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3309394F22969DAD00516CAB /* LaunchScreen.storyboard in Resources */,
+				3309394C22969DAD00516CAB /* Assets.xcassets in Resources */,
+				3309394A22969DAA00516CAB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		330939562296A18400516CAB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3309395E2296A18500516CAB /* Assets.xcassets in Resources */,
+				3309395C2296A18400516CAB /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		330939622296A18500516CAB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3309396E2296A18600516CAB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3309393D22969DAA00516CAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3309394722969DAA00516CAB /* ViewController.swift in Sources */,
+				3309394522969DAA00516CAB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		330939602296A18500516CAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3309396C2296A18500516CAB /* ExtensionDelegate.swift in Sources */,
+				3309396A2296A18500516CAB /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		330939672296A18500516CAB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 330939632296A18500516CAB /* Resthotels Watch Extension */;
+			targetProxy = 330939662296A18500516CAB /* PBXContainerItemProxy */;
+		};
+		330939712296A18600516CAB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 330939572296A18400516CAB /* Resthotels Watch */;
+			targetProxy = 330939702296A18600516CAB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3309394822969DAA00516CAB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3309394922969DAA00516CAB /* Base */,
+				3309397B2296DE5000516CAB /* fr */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3309394D22969DAD00516CAB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3309394E22969DAD00516CAB /* Base */,
+				3309397C2296DE5000516CAB /* fr */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		3309395A2296A18400516CAB /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3309395B2296A18400516CAB /* Base */,
+				3309397D2296DE5000516CAB /* fr */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3309395122969DAD00516CAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3309395222969DAD00516CAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3309395422969DAD00516CAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A7SGM6JEMA;
+				INFOPLIST_FILE = Resthotels/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fr.tectec.Resthotels;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3309395522969DAD00516CAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A7SGM6JEMA;
+				INFOPLIST_FILE = Resthotels/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fr.tectec.Resthotels;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		330939742296A18600516CAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A7SGM6JEMA;
+				INFOPLIST_FILE = "Resthotels Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fr.tectec.Resthotels.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.2;
+			};
+			name = Debug;
+		};
+		330939752296A18600516CAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A7SGM6JEMA;
+				INFOPLIST_FILE = "Resthotels Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fr.tectec.Resthotels.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.2;
+			};
+			name = Release;
+		};
+		330939782296A18600516CAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A7SGM6JEMA;
+				IBSC_MODULE = Resthotels_Watch_Extension;
+				INFOPLIST_FILE = "Resthotels Watch/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = fr.tectec.Resthotels.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.2;
+			};
+			name = Debug;
+		};
+		330939792296A18600516CAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A7SGM6JEMA;
+				IBSC_MODULE = Resthotels_Watch_Extension;
+				INFOPLIST_FILE = "Resthotels Watch/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = fr.tectec.Resthotels.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3309393C22969DAA00516CAB /* Build configuration list for PBXProject "Resthotels" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3309395122969DAD00516CAB /* Debug */,
+				3309395222969DAD00516CAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3309395322969DAD00516CAB /* Build configuration list for PBXNativeTarget "Resthotels" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3309395422969DAD00516CAB /* Debug */,
+				3309395522969DAD00516CAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		330939732296A18600516CAB /* Build configuration list for PBXNativeTarget "Resthotels Watch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				330939742296A18600516CAB /* Debug */,
+				330939752296A18600516CAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		330939772296A18600516CAB /* Build configuration list for PBXNativeTarget "Resthotels Watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				330939782296A18600516CAB /* Debug */,
+				330939792296A18600516CAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3309393922969DAA00516CAB /* Project object */;
+}

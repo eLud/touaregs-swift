@@ -1,0 +1,30 @@
+
+/* Class = "UISegmentedControl"; FE8-Le-FcE.segmentTitles[0] = "Resto"; ObjectID = "FE8-Le-FcE"; */
+"FE8-Le-FcE.segmentTitles[0]" = "Resto";
+
+/* Class = "UISegmentedControl"; FE8-Le-FcE.segmentTitles[1] = "Hotel"; ObjectID = "FE8-Le-FcE"; */
+"FE8-Le-FcE.segmentTitles[1]" = "Hotel";
+
+/* Class = "UITextField"; placeholder = "Phone number"; ObjectID = "FUc-hf-Cvf"; */
+"FUc-hf-Cvf.placeholder" = "Phone number";
+
+/* Class = "UITextField"; placeholder = "Website"; ObjectID = "Put-7j-i6b"; */
+"Put-7j-i6b.placeholder" = "Website";
+
+/* Class = "UILabel"; text = "2 stars"; ObjectID = "X2J-Lh-s8R"; */
+"X2J-Lh-s8R.text" = "2 stars";
+
+/* Class = "UIButton"; normalTitle = "Photo"; ObjectID = "Z2b-vc-cvC"; */
+"Z2b-vc-cvC.normalTitle" = "Photo";
+
+/* Class = "UILabel"; text = "Have swimming pool"; ObjectID = "iei-x8-iwB"; */
+"iei-x8-iwB.text" = "Have swimming pool";
+
+/* Class = "UILabel"; text = "10"; ObjectID = "lAq-d4-M62"; */
+"lAq-d4-M62.text" = "10";
+
+/* Class = "UITextField"; placeholder = "Name"; ObjectID = "oia-Yr-Smc"; */
+"oia-Yr-Smc.placeholder" = "Name";
+
+/* Class = "UITextField"; placeholder = "Adress"; ObjectID = "seB-z5-Icf"; */
+"seB-z5-Icf.placeholder" = "Adress";
