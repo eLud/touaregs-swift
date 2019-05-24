@@ -19,6 +19,8 @@
 		3309396C2296A18500516CAB /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3309396B2296A18500516CAB /* ExtensionDelegate.swift */; };
 		3309396E2296A18600516CAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3309396D2296A18600516CAB /* Assets.xcassets */; };
 		330939722296A18600516CAB /* Resthotels Watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 330939582296A18400516CAB /* Resthotels Watch.app */; };
+		33093981229845E400516CAB /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33093980229845E400516CAB /* Restaurant.swift */; };
+		3309398622984DB600516CAB /* TypesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3309398522984DB600516CAB /* TypesTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +85,8 @@
 		3309397B2296DE5000516CAB /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
 		3309397C2296DE5000516CAB /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		3309397D2296DE5000516CAB /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Interface.strings; sourceTree = "<group>"; };
+		33093980229845E400516CAB /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		3309398522984DB600516CAB /* TypesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypesTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,9 +130,11 @@
 		3309394322969DAA00516CAB /* Resthotels */ = {
 			isa = PBXGroup;
 			children = (
+				3309398522984DB600516CAB /* TypesTableViewController.swift */,
 				3309394422969DAA00516CAB /* AppDelegate.swift */,
 				3309394622969DAA00516CAB /* ViewController.swift */,
 				3309394822969DAA00516CAB /* Main.storyboard */,
+				33093980229845E400516CAB /* Restaurant.swift */,
 				3309394B22969DAD00516CAB /* Assets.xcassets */,
 				3309394D22969DAD00516CAB /* LaunchScreen.storyboard */,
 				3309395022969DAD00516CAB /* Info.plist */,
@@ -290,6 +296,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33093981229845E400516CAB /* Restaurant.swift in Sources */,
+				3309398622984DB600516CAB /* TypesTableViewController.swift in Sources */,
 				3309394722969DAA00516CAB /* ViewController.swift in Sources */,
 				3309394522969DAA00516CAB /* AppDelegate.swift in Sources */,
 			);

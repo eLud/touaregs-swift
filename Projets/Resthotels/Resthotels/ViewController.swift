@@ -8,12 +8,50 @@
 
 import UIKit
 
-struct Person {
-    let firstName: String
-    let lastName: String
+//Equatable: égalite
+//Comparable : comparaison
+//CustomStringConvertible : print
+//Codable : transformation en JSON/XML
+//Hashable
+
+protocol Etablissement: Mappable {
+    var name: String { get }
+    var website: URL? { get set }
+
+    func book() -> Reservation?
 }
 
-struct Restaurant {
+extension Etablissement {
+
+    func book() -> Reservation? {
+        return nil
+    }
+}
+
+protocol Mappable {
+    var adress: String { get }
+}
+
+struct Person: Equatable, CustomStringConvertible, Hashable, Mappable {
+    let firstName: String
+    let lastName: String
+//
+//    var latitude: Double = 0
+//    var longitude: Double = 0
+
+    var adress: String {
+        //prend la lat et la long, geocode, retourne l'adresse
+        return "toto"
+    }
+
+
+    var description: String {
+        return firstName + " " + lastName
+    }
+}
+
+struct Restaurant: Equatable, Etablissement, Mappable {
+
     let name: String
     let adress: String
     var nbTables: Int
@@ -23,8 +61,8 @@ struct Restaurant {
     var owner: Person
     var type: Set<RestaurantType>
 
-    func book() {
-
+    static func == (lhs: Restaurant, rhs: Restaurant) -> Bool {
+        return lhs.name == rhs.name && lhs.adress == rhs.adress
     }
 }
 
@@ -68,7 +106,7 @@ struct Hotel {
         // then return Resevation
         // else return nil
 
-        return nil
+        return Reservation()
     }
 }
 struct Reservation {}
@@ -76,7 +114,7 @@ struct Reservation {}
 class ViewController: UIViewController {
 
     @IBOutlet weak var placeTypeSegmentedControl: UISegmentedControl!
-    @IBOutlet weak var nametextField: UITextField!
+    @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var addressTextField: UITextField!
     @IBOutlet weak var numberOfSlider: UISlider!
     @IBOutlet weak var phoneNumberTextField: UITextField!
@@ -87,6 +125,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+
     }
 
     @IBAction func save(_ sender: UIButton) {
@@ -110,7 +149,7 @@ class ViewController: UIViewController {
             url = URL(string: urlString)
         }
 
-        if let name = nametextField.text,
+        if let name = nameTextField.text,
             let address = addressTextField.text,
             let phoneNumber = phoneNumberTextField.text {
 
@@ -124,7 +163,7 @@ class ViewController: UIViewController {
 
     private func saveHotel() -> Hotel? {
 
-        guard let name = nametextField.text else { return nil }
+        guard let name = nameTextField.text else { return nil }
         guard let address = addressTextField.text else { return nil }
         guard let phoneNumber = phoneNumberTextField.text else { return nil }
         guard let ranking = HotelRankink(rawValue: Int(rankingStepper.value)) else { return nil }
