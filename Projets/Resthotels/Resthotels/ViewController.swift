@@ -66,7 +66,7 @@ struct Restaurant: Equatable, Etablissement, Mappable {
     }
 }
 
-enum RestaurantType: String {
+enum RestaurantType: String, CaseIterable {
     case italian = "Italien"
     case french
     case american
@@ -76,6 +76,12 @@ enum RestaurantType: String {
     case fastFood
     case lebanese
     case vegan
+
+    static var allRawValues: [String] {
+        return RestaurantType.allCases.map { (type) -> String in
+            return type.rawValue
+        }
+    }
 }
 
 enum HotelRankink: Int {
@@ -113,6 +119,8 @@ struct Reservation {}
 
 class ViewController: UIViewController {
 
+    var selectedTypes: [RestaurantType] = []
+
     @IBOutlet weak var placeTypeSegmentedControl: UISegmentedControl!
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var addressTextField: UITextField!
@@ -130,7 +138,19 @@ class ViewController: UIViewController {
 
     }
 
-    @IBAction func save(_ sender: UIButton) {
+    //Est executé juste avant la transition pilotée par le segue
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showTypes" {
+            guard let destination = segue.destination as? TypesTableViewController else { fatalError("Bad destination") }
+            destination.selectionDelegate = self
+        }
+    }
+
+    @IBAction func cancel(_ sender: UIBarButtonItem) {
+        dismiss(animated: true, completion: nil)
+    }
+
+    @IBAction func save(_ sender: UIBarButtonItem) {
 
         switch placeTypeSegmentedControl.selectedSegmentIndex {
         case 0:
@@ -188,5 +208,14 @@ class ViewController: UIViewController {
 
             print(user.card?.cardNumber)
         }
+    }
+}
+
+extension ViewController: TypesTableViewControllerSelectionDelegate {
+
+    func didSelect(_ types: [RestaurantType]) {
+        selectedTypes = types
+
+        print("Reçu \(types)")
     }
 }
