@@ -126,6 +126,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
 
+//        demoMemoryLeak()
+
     }
 
     @IBAction func save(_ sender: UIButton) {
@@ -177,5 +179,14 @@ class ViewController: UIViewController {
 
         return myHotel
     }
-}
 
+    private func demoMemoryLeak() {
+
+        for _ in 0...1000000 {
+            let user = User(name: "Bill Gates")
+            user.card = CreditCard(number: "123456789", user: user)
+
+            print(user.card?.cardNumber)
+        }
+    }
+}

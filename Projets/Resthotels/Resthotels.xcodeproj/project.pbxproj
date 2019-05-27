@@ -21,6 +21,8 @@
 		330939722296A18600516CAB /* Resthotels Watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 330939582296A18400516CAB /* Resthotels Watch.app */; };
 		33093981229845E400516CAB /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33093980229845E400516CAB /* Restaurant.swift */; };
 		3309398622984DB600516CAB /* TypesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3309398522984DB600516CAB /* TypesTableViewController.swift */; };
+		33093988229BD9CF00516CAB /* SimpleStringTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33093987229BD9CF00516CAB /* SimpleStringTableViewDataSource.swift */; };
+		3394D292229BED9100859AE2 /* MemoryDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3394D291229BED9100859AE2 /* MemoryDemo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +89,8 @@
 		3309397D2296DE5000516CAB /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Interface.strings; sourceTree = "<group>"; };
 		33093980229845E400516CAB /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 		3309398522984DB600516CAB /* TypesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypesTableViewController.swift; sourceTree = "<group>"; };
+		33093987229BD9CF00516CAB /* SimpleStringTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleStringTableViewDataSource.swift; sourceTree = "<group>"; };
+		3394D291229BED9100859AE2 /* MemoryDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryDemo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +137,8 @@
 				3309398522984DB600516CAB /* TypesTableViewController.swift */,
 				3309394422969DAA00516CAB /* AppDelegate.swift */,
 				3309394622969DAA00516CAB /* ViewController.swift */,
+				3394D291229BED9100859AE2 /* MemoryDemo.swift */,
+				33093987229BD9CF00516CAB /* SimpleStringTableViewDataSource.swift */,
 				3309394822969DAA00516CAB /* Main.storyboard */,
 				33093980229845E400516CAB /* Restaurant.swift */,
 				3309394B22969DAD00516CAB /* Assets.xcassets */,
@@ -298,6 +304,8 @@
 			files = (
 				33093981229845E400516CAB /* Restaurant.swift in Sources */,
 				3309398622984DB600516CAB /* TypesTableViewController.swift in Sources */,
+				33093988229BD9CF00516CAB /* SimpleStringTableViewDataSource.swift in Sources */,
+				3394D292229BED9100859AE2 /* MemoryDemo.swift in Sources */,
 				3309394722969DAA00516CAB /* ViewController.swift in Sources */,
 				3309394522969DAA00516CAB /* AppDelegate.swift in Sources */,
 			);
