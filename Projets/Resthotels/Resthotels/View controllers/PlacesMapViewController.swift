@@ -13,8 +13,6 @@ class PlacesMapViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "map")!)
-
         // Do any additional setup after loading the view.
     }
     

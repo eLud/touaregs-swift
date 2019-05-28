@@ -14,109 +14,6 @@ import UIKit
 //Codable : transformation en JSON/XML
 //Hashable
 
-protocol Etablissement: Mappable {
-    var name: String { get }
-    var website: URL? { get set }
-
-    func book() -> Reservation?
-}
-
-extension Etablissement {
-
-    func book() -> Reservation? {
-        return nil
-    }
-}
-
-protocol Mappable {
-    var adress: String { get }
-}
-
-struct Person: Equatable, CustomStringConvertible, Hashable, Mappable {
-    let firstName: String
-    let lastName: String
-//
-//    var latitude: Double = 0
-//    var longitude: Double = 0
-
-    var adress: String {
-        //prend la lat et la long, geocode, retourne l'adresse
-        return "toto"
-    }
-
-
-    var description: String {
-        return firstName + " " + lastName
-    }
-}
-
-struct Restaurant: Equatable, Etablissement, Mappable {
-
-    let name: String
-    let adress: String
-    var nbTables: Int
-    let phone: String
-    var website: URL?
-    let images: [URL]
-    var owner: Person
-    var type: Set<RestaurantType>
-
-    static func == (lhs: Restaurant, rhs: Restaurant) -> Bool {
-        return lhs.name == rhs.name && lhs.adress == rhs.adress
-    }
-}
-
-enum RestaurantType: String, CaseIterable {
-    case italian = "Italien"
-    case french
-    case american
-    case indian
-    case japanese
-    case chinese
-    case fastFood
-    case lebanese
-    case vegan
-
-    static var allRawValues: [String] {
-        return RestaurantType.allCases.map { (type) -> String in
-            return type.rawValue
-        }
-    }
-}
-
-enum HotelRankink: Int {
-    case noStar
-    case oneStar
-    case twoStars
-    case threeStars
-    case fourStars
-    case fiveStars
-}
-
-struct Hotel {
-    let name: String
-    let adress: String
-    var nbRooms: Int
-    let phone: String
-    var website: URL?
-    let images: [URL]
-    var owner: Person
-    var ranking: HotelRankink
-    var haveSwimmingPool: Bool
-
-    var restaurant: Restaurant?
-
-    func book() -> Reservation? {
-
-        //if roomIsAvailable
-        // then return Resevation
-        // else return nil
-
-        return Reservation()
-    }
-}
-struct Reservation {}
-
 class ViewController: UIViewController {
 
     var selectedTypes: [RestaurantType] = []
@@ -135,6 +32,8 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
 
 //        demoMemoryLeak()
+        codableDemo()
+
 
     }
 
@@ -208,6 +107,26 @@ class ViewController: UIViewController {
 
             print(user.card?.cardNumber)
         }
+    }
+
+    private func userDefaultsDemo() {
+        let prefs = UserDefaults.standard
+        //        prefs.set("Test", forKey: "test")
+        let readData = prefs.string(forKey: "name_preference")
+        print(readData)
+    }
+
+    private func codableDemo() {
+
+        let family = [Person(firstName: "Papa", lastName: "Ours"), Person(firstName: "Maman", lastName: "Ours"), Person(firstName: "Bébé", lastName: "Ours")]
+
+        let jsonEncoder = JSONEncoder()
+        let jsonData = try! jsonEncoder.encode(family)
+        print(String(data: jsonData, encoding: .utf8)!)
+
+        let jsonDecoder = JSONDecoder()
+        let decodedFamily = try! jsonDecoder.decode([Person].self, from: jsonData)
+        print(decodedFamily)
     }
 }
 

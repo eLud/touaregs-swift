@@ -24,6 +24,8 @@ class TypesTableViewController: UITableViewController {
         super.viewDidLoad()
         tableView.dataSource = dataSource
         tableView.delegate = self
+
+        title = "Test"
     }
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

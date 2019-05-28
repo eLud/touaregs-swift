@@ -25,6 +25,14 @@
 		3394D292229BED9100859AE2 /* MemoryDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3394D291229BED9100859AE2 /* MemoryDemo.swift */; };
 		33BB30C2229C257D00ABEC47 /* PlacesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BB30C1229C257D00ABEC47 /* PlacesTableViewController.swift */; };
 		33BB30C4229C25CC00ABEC47 /* PlacesMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BB30C3229C25CC00ABEC47 /* PlacesMapViewController.swift */; };
+		33BB30C7229D351B00ABEC47 /* Hotel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BB30C6229D351B00ABEC47 /* Hotel.swift */; };
+		33BB30C9229D354400ABEC47 /* Etablissement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BB30C8229D354400ABEC47 /* Etablissement.swift */; };
+		33BB30CB229D35AB00ABEC47 /* Mappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BB30CA229D35AB00ABEC47 /* Mappable.swift */; };
+		33BB30CD229D35BD00ABEC47 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BB30CC229D35BD00ABEC47 /* Person.swift */; };
+		33BB30D0229D373900ABEC47 /* Directory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BB30CF229D373900ABEC47 /* Directory.swift */; };
+		33BB30D2229D4AEE00ABEC47 /* HotelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BB30D1229D4AEE00ABEC47 /* HotelTableViewCell.swift */; };
+		33BB30D4229D5F4D00ABEC47 /* PlaceDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BB30D3229D5F4D00ABEC47 /* PlaceDetailsTableViewController.swift */; };
+		33BB30D6229D6DE900ABEC47 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 33BB30D5229D6DE900ABEC47 /* Settings.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +103,14 @@
 		3394D291229BED9100859AE2 /* MemoryDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryDemo.swift; sourceTree = "<group>"; };
 		33BB30C1229C257D00ABEC47 /* PlacesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesTableViewController.swift; sourceTree = "<group>"; };
 		33BB30C3229C25CC00ABEC47 /* PlacesMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesMapViewController.swift; sourceTree = "<group>"; };
+		33BB30C6229D351B00ABEC47 /* Hotel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hotel.swift; sourceTree = "<group>"; };
+		33BB30C8229D354400ABEC47 /* Etablissement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Etablissement.swift; sourceTree = "<group>"; };
+		33BB30CA229D35AB00ABEC47 /* Mappable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mappable.swift; sourceTree = "<group>"; };
+		33BB30CC229D35BD00ABEC47 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		33BB30CF229D373900ABEC47 /* Directory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Directory.swift; sourceTree = "<group>"; };
+		33BB30D1229D4AEE00ABEC47 /* HotelTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelTableViewCell.swift; sourceTree = "<group>"; };
+		33BB30D3229D5F4D00ABEC47 /* PlaceDetailsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDetailsTableViewController.swift; sourceTree = "<group>"; };
+		33BB30D5229D6DE900ABEC47 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,15 +154,14 @@
 		3309394322969DAA00516CAB /* Resthotels */ = {
 			isa = PBXGroup;
 			children = (
-				3309398522984DB600516CAB /* TypesTableViewController.swift */,
+				33BB30D5229D6DE900ABEC47 /* Settings.bundle */,
+				33BB30D1229D4AEE00ABEC47 /* HotelTableViewCell.swift */,
 				3309394422969DAA00516CAB /* AppDelegate.swift */,
-				3309394622969DAA00516CAB /* ViewController.swift */,
-				3394D291229BED9100859AE2 /* MemoryDemo.swift */,
 				33093987229BD9CF00516CAB /* SimpleStringTableViewDataSource.swift */,
+				3394D291229BED9100859AE2 /* MemoryDemo.swift */,
+				33BB30C5229D34E400ABEC47 /* View controllers */,
+				33BB30CE229D35E800ABEC47 /* Models */,
 				3309394822969DAA00516CAB /* Main.storyboard */,
-				33BB30C1229C257D00ABEC47 /* PlacesTableViewController.swift */,
-				33BB30C3229C25CC00ABEC47 /* PlacesMapViewController.swift */,
-				33093980229845E400516CAB /* Restaurant.swift */,
 				3309394B22969DAD00516CAB /* Assets.xcassets */,
 				3309394D22969DAD00516CAB /* LaunchScreen.storyboard */,
 				3309395022969DAD00516CAB /* Info.plist */,
@@ -173,6 +188,31 @@
 				3309396F2296A18600516CAB /* Info.plist */,
 			);
 			path = "Resthotels Watch Extension";
+			sourceTree = "<group>";
+		};
+		33BB30C5229D34E400ABEC47 /* View controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3309398522984DB600516CAB /* TypesTableViewController.swift */,
+				3309394622969DAA00516CAB /* ViewController.swift */,
+				33BB30C1229C257D00ABEC47 /* PlacesTableViewController.swift */,
+				33BB30C3229C25CC00ABEC47 /* PlacesMapViewController.swift */,
+				33BB30D3229D5F4D00ABEC47 /* PlaceDetailsTableViewController.swift */,
+			);
+			path = "View controllers";
+			sourceTree = "<group>";
+		};
+		33BB30CE229D35E800ABEC47 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				33BB30C8229D354400ABEC47 /* Etablissement.swift */,
+				33093980229845E400516CAB /* Restaurant.swift */,
+				33BB30C6229D351B00ABEC47 /* Hotel.swift */,
+				33BB30CA229D35AB00ABEC47 /* Mappable.swift */,
+				33BB30CC229D35BD00ABEC47 /* Person.swift */,
+				33BB30CF229D373900ABEC47 /* Directory.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,6 +283,11 @@
 				TargetAttributes = {
 					3309394022969DAA00516CAB = {
 						CreatedOnToolsVersion = 10.2.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					330939572296A18400516CAB = {
 						CreatedOnToolsVersion = 10.2.1;
@@ -278,6 +323,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33BB30D6229D6DE900ABEC47 /* Settings.bundle in Resources */,
 				3309394F22969DAD00516CAB /* LaunchScreen.storyboard in Resources */,
 				3309394C22969DAD00516CAB /* Assets.xcassets in Resources */,
 				3309394A22969DAA00516CAB /* Main.storyboard in Resources */,
@@ -311,10 +357,17 @@
 				33093981229845E400516CAB /* Restaurant.swift in Sources */,
 				3309398622984DB600516CAB /* TypesTableViewController.swift in Sources */,
 				33093988229BD9CF00516CAB /* SimpleStringTableViewDataSource.swift in Sources */,
+				33BB30C7229D351B00ABEC47 /* Hotel.swift in Sources */,
+				33BB30D0229D373900ABEC47 /* Directory.swift in Sources */,
 				3394D292229BED9100859AE2 /* MemoryDemo.swift in Sources */,
 				3309394722969DAA00516CAB /* ViewController.swift in Sources */,
+				33BB30CD229D35BD00ABEC47 /* Person.swift in Sources */,
 				33BB30C4229C25CC00ABEC47 /* PlacesMapViewController.swift in Sources */,
 				33BB30C2229C257D00ABEC47 /* PlacesTableViewController.swift in Sources */,
+				33BB30D2229D4AEE00ABEC47 /* HotelTableViewCell.swift in Sources */,
+				33BB30CB229D35AB00ABEC47 /* Mappable.swift in Sources */,
+				33BB30C9229D354400ABEC47 /* Etablissement.swift in Sources */,
+				33BB30D4229D5F4D00ABEC47 /* PlaceDetailsTableViewController.swift in Sources */,
 				3309394522969DAA00516CAB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
